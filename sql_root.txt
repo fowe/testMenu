@@ -1,0 +1,33 @@
+CREATE TABLE  `a6869696_menudb`.`categorys` (
+`id` INT( 11 ) NOT NULL ,
+`name` VARCHAR( 100 ) NOT NULL ,
+PRIMARY KEY (  `id` )
+) ENGINE = MYISAM
+
+CREATE TABLE  `a6869696_menudb`.`dish` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT ,
+`name` VARCHAR( 100 ) NOT NULL ,
+`description` VARCHAR( 1000 ) NOT NULL ,
+`price` FLOAT( 11 ) NOT NULL ,
+`review_id` INT( 11 ) NOT NULL ,
+`comment_id` INT( 11 ) NOT NULL ,
+`category_id` INT( 11 ) NOT NULL ,
+`date_created` DATETIME NOT NULL ,
+PRIMARY KEY (  `id` )
+) ENGINE = MYISAM
+
+CREATE TABLE  `a6869696_menudb`.`order` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT ,
+`dish_id` INT( 11 ) NOT NULL ,
+`quantity` INT( 3 ) NOT NULL ,
+`price` FLOAT( 11 ) NOT NULL ,
+PRIMARY KEY (  `id` )
+) ENGINE = MYISAM
+
+CREATE TABLE  `a6869696_menudb`.`table` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT ,
+`tableNumber` VARCHAR( 100 ) NOT NULL ,
+`description` VARCHAR( 1000 ) NOT NULL ,
+`status` INT( 2 ) NOT NULL ,
+PRIMARY KEY (  `id` )
+) ENGINE = MYISAM
