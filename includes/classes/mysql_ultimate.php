@@ -18,10 +18,10 @@ class MySQL
 {
 	// SET THESE VALUES TO MATCH YOUR DATA CONNECTION
 
-	private $db_host    = "mysql13.000webhost.com";  // server name 
-	private $db_user    = "a6869696_menu";       // user name
-	private $db_pass    = "@dminit84";           // password
-	private $db_dbname  = "a6869696_menudb";           // database name
+	private $db_host    = "mysql8.000webhost.com";  // server name 
+	private $db_user    = "a6536696_test";       // user name
+	private $db_pass    = "Antest@2015";           // password
+	private $db_dbname  = "a6536696_test";           // database name
 	private $db_charset = "utf8";           // optional character set (i.e. utf8)
 	private $db_pcon    = false;        // use persistent connection?
 
